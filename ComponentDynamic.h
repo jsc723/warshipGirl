@@ -7,7 +7,7 @@ public:
 	typedef enum {END = 0,MOVIN,NORMAL,MOVOUT} CD_STATE;
 	ComponentDynamic(wstring imgName, int x, int y, LPARAM lParam);
 	virtual ~ComponentDynamic();
-	virtual void OnPaint();
+	virtual void OnPaint(int, int, int, int, int, D3DCOLOR);
 protected:
 	virtual int CD_X() { return x; }
 	virtual int CD_Y() { return y; }

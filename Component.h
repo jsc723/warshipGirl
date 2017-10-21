@@ -24,10 +24,10 @@ public:
 	virtual void AddLabel(Label *label);
 	virtual void StartPaint();
 	virtual void EndPaint();
-	virtual void OnPaint();
+	void OnPaint();
 	virtual void OnPaintMoving(double r);
-	virtual void OnPaint(int dx, int dy);
-	virtual void OnPaint(int dx, int dy, int w, int h);
+	void OnPaint(int dx, int dy);
+	void OnPaint(int dx, int dy, int w, int h);
 	virtual void OnPaint(int dx, int dy, int w, int h, int a, D3DCOLOR diffuse);
 	Scene *scene;
 	int angle;

@@ -86,3 +86,5 @@ public:
 	int shadeCount;
 };
 
+void ComRightOptOnClick(Component *self, int x, int y, WPARAM wParam);
+

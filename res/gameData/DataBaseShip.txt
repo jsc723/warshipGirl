@@ -1,0 +1,702 @@
+<1 胡德
+5 5 75 star type maxHp
+68 93 huoli huoli+
+65 80 zhuangjia zhuangjia+
+0 0 yulei yulei+
+27 57 huibi huibi+
+40 70 duikong duikong+
+0 31 duiqian, hangshu
+13 38 suodi suodi+
+3 5 shecheng xingyun
+70 120 oil bullet
+3 3 3 3 dz
+75 20 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_1.png
+bro
+L_BROKEN_1.png
+>
+<2 扶桑
+3 3 67 star type maxHp
+74 94 huoli huoli+
+59 79 zhuangjia zhuangjia+
+0 0 yulei yulei+
+19 39 huibi huibi+
+23 53 duikong duikong+
+0 25 duiqian, hangshu
+9 34 suodi suodi+
+3 5 shecheng xingyun
+85 120 oil bullet
+3 3 3 3 dz
+-1 -1 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_2.png
+bro
+L_BROKEN_2.png
+>
+<3 山城
+3 3 67 star type maxHp
+74 94 huoli huoli+
+59 79 zhuangjia zhuangjia+
+0 0 yulei yulei+
+19 39 huibi huibi+
+23 53 duikong duikong+
+0 25 duiqian, hangshu
+9 34 suodi suodi+
+3 5 shecheng xingyun
+85 120 oil bullet
+3 3 3 3 dz
+-1 -1 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_3.png
+bro
+L_BROKEN_3.png
+>
+<4 伊势
+3 3 74 star type maxHp
+74 89 huoli huoli+
+62 82 zhuangjia zhuangjia+
+0 0 yulei yulei+
+22 42 huibi huibi+
+28 58 duikong duikong+
+0 24 duiqian, hangshu
+10 35 suodi suodi+
+3 15 shecheng xingyun
+85 120 oil bullet
+3 3 3 3 dz
+52 4 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_4.png
+bro
+L_BROKEN_4.png
+>
+<6 俾斯麦
+5 3 90 star type maxHp
+72 92 huoli huoli+
+80 100 zhuangjia zhuangjia+
+0 0 yulei yulei+
+26 46 huibi huibi+
+25 55 duikong duikong+
+0 30 duiqian, hangshu
+16 41 suodi suodi+
+3 15 shecheng xingyun
+90 130 oil bullet
+4 4 4 4 dz
+75 20 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_6.png
+bro
+L_BROKEN_6.png
+>
+<7 提尔比茨
+5 3 91 稀有度 类型 耐久
+72 92 火力 火力+
+80 100 装甲 装甲+
+0 0 鱼雷 鱼雷+
+26 46 回避 回避+
+25 55 对空 对空+
+0 30 对潜  航速
+16 41 索敌 索敌+
+3 15 射程 幸运
+90 130 燃料 弹药
+4 4 4 4 搭载
+75 20 改造等级 改造核心
+nor
+L_NORMAL_7.png
+bro
+L_BROKEN_7.png
+>
+<8 纳尔逊
+4 3 72 稀有度 类型 耐久
+84 104 火力 火力+
+72 92 装甲 装甲+
+0 0 鱼雷 鱼雷+
+19 39 回避 回避+
+42 72 对空 对空+
+0 23 对潜  航速
+12 37 索敌 索敌+
+3 20 射程 幸运
+90 140 燃料 弹药
+0 0 0 0 搭载
+50 5 改造等级 改造核心
+nor
+L_NORMAL_8.png
+bro
+L_BROKEN_8.png
+>
+<9 罗德尼
+4 3 72 稀有度 类型 耐久
+84 104 火力 火力+
+72 92 装甲 装甲+
+0 0 鱼雷 鱼雷+
+19 39 回避 回避+
+42 72 对空 对空+
+0 23 对潜  航速
+12 37 索敌 索敌+
+3 20 射程 幸运
+90 140 燃料 弹药
+0 0 0 0 搭载
+50 5 改造等级 改造核心
+nor
+L_NORMAL_9.png
+bro
+L_BROKEN_9.png
+>
+<13 安德烈亚·多利亚
+5 3 54 star type maxHp
+59 79 huoli huoli+
+59 79 zhuangjia zhuangjia+
+0 0 yulei yulei+
+22 42 huibi huibi+
+18 48 duikong duikong+
+0 22 duiqian, hangshu
+10 35 suodi suodi+
+3 20 shecheng xingyun
+70 110 oil bullet
+3 3 3 3 dz
+60 12 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_13.png
+bro
+L_BROKEN_13.png
+>
+<18 声望
+3 5 65 稀有度 类型 耐久
+58 83 火力 火力+
+56 71 装甲 装甲+
+0 0 鱼雷 鱼雷+
+30 60 回避 回避+
+52 82 对空 对空+
+0 31 对潜  航速
+14 39 索敌 索敌+
+3 25 射程 幸运
+70 120 燃料 弹药
+4 4 4 4 搭载
+50 15 改造等级 改造核心
+nor
+L_NORMAL_18.png
+bro
+L_BROKEN_18.png
+>
+<19 反击
+3 5 65 稀有度 类型 耐久
+58 83 火力 火力+
+56 71 装甲 装甲+
+0 0 鱼雷 鱼雷+
+30 60 回避 回避+
+40 70 对空 对空+
+0 31 对潜  航速
+14 39 索敌 索敌+
+3 12 射程 幸运
+70 120 燃料 弹药
+4 4 4 4 搭载
+40 8 改造等级 改造核心
+nor
+L_NORMAL_19.png
+bro
+L_BROKEN_19.png
+>
+<22 赤城
+5 0 69 稀有度 类型 耐久
+0 40 火力 火力+
+30 55 装甲 装甲+
+0 0 鱼雷 鱼雷+
+28 48 回避 回避+
+32 62 对空 对空+
+0 31 对潜  航速
+44 69 索敌 索敌+
+1 12 射程 幸运
+60 55 燃料 弹药
+18 18 27 10 搭载
+77 20 改造等级 改造核心
+nor
+L_NORMAL_22.png
+bro
+L_BROKEN_22.png
+>
+<23 加贺
+5 0 71 稀有度 类型 耐久
+0 40 火力 火力+
+32 62 装甲 装甲+
+0 0 鱼雷 鱼雷+
+27 47 回避 回避+
+28 58 对空 对空+
+0 28 对潜  航速
+40 65 索敌 索敌+
+1 10 射程 幸运
+60 55 燃料 弹药
+18 18 45 12 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_23.png
+bro
+L_BROKEN_23.png
+>
+<29 列克星敦
+4 0 63 star type maxHp
+0 35 huoli huoli+
+40 65 zhuangjia zhuangjia+
+0 0 yulei yulei+
+30 50 huibi huibi+
+37 67 duikong duikong+
+0 33 duiqian, hangshu
+42 67 suodi suodi+
+1 20 shecheng xingyun
+55 60 oil bullet
+20 20 30 10 dz
+40 5 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_29.png
+bro
+L_BROKEN_29.png
+>
+<30 萨拉托加
+4 0 63 star type maxHp
+0 35 huoli huoli+
+40 65 zhuangjia zhuangjia+
+0 0 yulei yulei+
+30 50 huibi huibi+
+55 85 duikong duikong+
+0 33 duiqian, hangshu
+42 67 suodi suodi+
+1 22 shecheng xingyun
+55 60 oil bullet
+20 20 30 10 dz
+50 5 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_30.png
+bro
+L_BROKEN_30.png
+>
+<37 布吕歇尔
+3 6 52 稀有度 类型 耐久
+36 56 火力 火力+
+33 48 装甲 装甲+
+20 55 鱼雷 鱼雷+
+30 70 回避 回避+
+22 52 对空 对空+
+0 32 对潜  航速
+14 49 索敌 索敌+
+2 15 射程 幸运
+35 65 燃料 弹药
+3 3 3 0 搭载
+30 6 改造等级 改造核心
+nor
+L_NORMAL_37.png
+bro
+L_BROKEN_37.png
+>
+<38 欧根亲王
+5 6 54 star type maxHp
+36 56 huoli huoli+ 
+36 51 zhuangjia zhuangjia+
+20 55 yulei yulei+
+30 70 huibi huibi+
+22 52 duikong duikong+
+0 32 duiqian, hangshu
+14 49 suodi suodi+
+2 25 shecheng xingyun
+35 65 oil bullet
+3 3 3 0 dz
+30 6 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_38.png
+bro
+L_BROKEN_38.png
+>
+<40 昆西
+3 6 43 稀有度 类型 耐久
+38 63 火力 火力+
+32 52 装甲 装甲+
+0 0 鱼雷 鱼雷+
+31 71 回避 回避+
+35 65 对空 对空+
+0 33 对潜  航速
+15 50 索敌 索敌+
+2 15 射程 幸运
+40 70 燃料 弹药
+2 2 2 0 搭载
+40 5 改造等级 改造核心
+nor
+L_NORMAL_40.png
+bro
+L_BROKEN_40.png
+>
+<59 海伦娜
+4 9 33 稀有度 类型 耐久
+32 62 火力 火力+
+29 54 装甲 装甲+
+0 0 鱼雷 鱼雷+
+31 66 回避 回避+
+45 85 对空 对空+
+65 31 对潜  航速
+12 22 索敌 索敌+
+2 15 射程 幸运
+30 35 燃料 弹药
+0 0 0 0 搭载
+30 5 改造等级 改造核心
+nor
+L_NORMAL_59.png
+bro
+L_BROKEN_59.png
+>
+<64 吹雪
+2 11 15 star type maxHp
+11 31 huoli huoli+ 
+7 22 zhuangjia zhuangjia+
+25 75 yulei yulei+
+43 83 huibi huibi+
+7 37 duikong duikong+
+46 37 duiqian, hangshu
+6 16 suodi suodi+
+1 12 shecheng xingyun
+15 20 oil bullet
+0 0 0 0 dz
+48 8 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_64.png
+bro
+L_BROKEN_64.png
+>
+<65 白雪
+2 11 15 star type maxHp
+11 31 huoli huoli+ 
+7 22 zhuangjia zhuangjia+
+25 75 yulei yulei+
+43 83 huibi huibi+
+7 37 duikong duikong+
+46 37 duiqian, hangshu
+6 16 suodi suodi+
+1 9 shecheng xingyun
+15 20 oil bullet
+0 0 0 0 dz
+49 8 gaiZaoLevel gaiZaoCore
+nor
+L_NORMAL_65.png
+bro
+L_BROKEN_65.png
+>
+<66 初雪
+2 11 15 稀有度 类型 耐久
+11 31 火力 火力+
+7 22 装甲 装甲+
+25 75 鱼雷 鱼雷+
+43 83 回避 回避+
+7 37 对空 对空+
+46 37 对潜  航速
+6 16 索敌 索敌+
+1 9 射程 幸运
+15 20 燃料 弹药
+0 0 0 0 搭载
+51 8 改造等级 改造核心
+nor
+L_NORMAL_66.png
+bro
+L_BROKEN_66.png
+>
+<67 深雪
+2 11 15 稀有度 类型 耐久
+11 31 火力 火力+
+7 22 装甲 装甲+
+25 75 鱼雷 鱼雷+
+43 83 回避 回避+
+7 37 对空 对空+
+46 37 对潜  航速
+6 16 索敌 索敌+
+1 5 射程 幸运
+15 20 燃料 弹药
+0 0 0 0 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_67.png
+bro
+L_BROKEN_67.png
+>
+<72 绫波
+2 11 15 稀有度 类型 耐久
+10 30 火力 火力+
+5 20 装甲 装甲+
+27 77 鱼雷 鱼雷+
+41 81 回避 回避+
+12 42 对空 对空+
+50 38 对潜  航速
+5 15 索敌 索敌+
+1 10 射程 幸运
+15 20 燃料 弹药
+0 0 0 0 搭载
+42 12 改造等级 改造核心
+nor
+L_NORMAL_72.png
+bro
+L_BROKEN_72.png
+>
+<73 敷波
+1 11 15 稀有度 类型 耐久
+10 30 火力 火力+
+5 20 装甲 装甲+
+27 77 鱼雷 鱼雷+
+41 81 回避 回避+
+12 42 对空 对空+
+50 38 对潜  航速
+5 15 索敌 索敌+
+1 10 射程 幸运
+15 20 燃料 弹药
+0 0 0 0 搭载
+44 4 改造等级 改造核心
+nor
+L_NORMAL_73.png
+bro
+L_BROKEN_73.png
+>
+<74 Z1
+2 11 18 稀有度 类型 耐久
+8 28 火力 火力+
+8 23 装甲 装甲+
+24 74 鱼雷 鱼雷+
+38 78 回避 回避+
+11 41 对空 对空+
+52 38 对潜  航速
+6 16 索敌 索敌+
+1 15 射程 幸运
+10 20 燃料 弹药
+0 0 0 0 搭载
+20 3 改造等级 改造核心
+nor
+L_NORMAL_74.png
+bro
+L_BROKEN_74.png
+>
+<75 Z16
+2 11 18 稀有度 类型 耐久
+8 28 火力 火力+
+8 23 装甲 装甲+
+24 74 鱼雷 鱼雷+
+38 78 回避 回避+
+11 41 对空 对空+
+52 38 对潜  航速
+6 16 索敌 索敌+
+1 15 射程 幸运
+10 20 燃料 弹药
+0 0 0 0 搭载
+40 3 改造等级 改造核心
+nor
+L_NORMAL_75.png
+bro
+L_BROKEN_75.png
+>
+<76 Z21
+1 11 20 稀有度 类型 耐久
+13 33 火力 火力+
+10 25 装甲 装甲+
+24 74 鱼雷 鱼雷+
+38 78 回避 回避+
+12 42 对空 对空+
+52 39 对潜  航速
+6 16 索敌 索敌+
+1 10 射程 幸运
+10 20 燃料 弹药
+0 0 0 0 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_76.png
+bro
+L_BROKEN_76.png
+>
+<77 Z22
+1 11 20 稀有度 类型 耐久
+13 33 火力 火力+
+10 25 装甲 装甲+
+24 74 鱼雷 鱼雷+
+38 78 回避 回避+
+12 42 对空 对空+
+52 39 对潜  航速
+6 16 索敌 索敌+
+1 10 射程 幸运
+10 20 燃料 弹药
+0 0 0 0 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_77.png
+bro
+L_BROKEN_77.png
+>
+<112 维内托
+5 3 75 稀有度 类型 耐久
+81 101 火力 火力+
+78 98 装甲 装甲+
+0 0 鱼雷 鱼雷+
+28 48 回避 回避+
+32 62 对空 对空+
+0 31 对潜  航速
+14 39 索敌 索敌+
+3 17 射程 幸运
+90 130 燃料 弹药
+3 3 3 3 搭载
+80 25 改造等级 改造核心
+nor
+L_NORMAL_112.png
+bro
+L_BROKEN_112.png
+>
+<117 大凤
+5 2 67 稀有度 类型 耐久
+0 40 火力 火力+
+50 85 装甲 装甲+
+0 0 鱼雷 鱼雷+
+33 53 回避 回避+
+42 72 对空 对空+
+0 33 对潜  航速
+47 72 索敌 索敌+
+1 6 射程 幸运
+70 65 燃料 弹药
+15 15 35 10 搭载
+75 20 改造等级 改造核心
+nor
+L_NORMAL_117.png
+bro
+L_BROKEN_117.png
+>
+<120 约克城
+5 0 50 稀有度 类型 耐久
+0 40 火力 火力+
+30 55 装甲 装甲+
+0 0 鱼雷 鱼雷+
+30 50 回避 回避+
+38 68 对空 对空+
+0 32 对潜  航速
+38 63 索敌 索敌+
+1 12 射程 幸运
+55 60 燃料 弹药
+15 15 35 10 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_120.png
+bro
+L_BROKEN_120.png
+>
+<121 企业
+5 0 50 稀有度 类型 耐久
+0 45 火力 火力+
+30 55 装甲 装甲+
+0 0 鱼雷 鱼雷+
+30 50 回避 回避+
+40 70 对空 对空+
+0 32 对潜  航速
+40 70 索敌 索敌+
+1 55 射程 幸运
+55 60 燃料 弹药
+15 15 35 10 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_121.png
+bro
+L_BROKEN_121.png
+>
+<123 博格
+3 1 35 稀有度 类型 耐久
+0 20 火力 火力+
+7 27 装甲 装甲+
+0 0 鱼雷 鱼雷+
+15 38 回避 回避+
+33 63 对空 对空+
+0 16 对潜  航速
+36 61 索敌 索敌+
+1 15 射程 幸运
+35 40 燃料 弹药
+15 10 3 0 搭载
+52 10 改造等级 改造核心
+nor
+L_NORMAL_123.png
+bro
+L_BROKEN_123.png
+>
+<124 追赶者
+4 1 35 稀有度 类型 耐久
+0 20 火力 火力+
+7 27 装甲 装甲+
+0 0 鱼雷 鱼雷+
+15 38 回避 回避+
+33 63 对空 对空+
+15 16 对潜  航速
+36 61 索敌 索敌+
+1 30 射程 幸运
+35 40 燃料 弹药
+15 10 3 0 搭载
+67 12 改造等级 改造核心
+nor
+L_NORMAL_124.png
+bro
+L_BROKEN_124.png
+>
+<125 巨像
+3 1 40 稀有度 类型 耐久
+0 20 火力 火力+
+18 38 装甲 装甲+
+0 0 鱼雷 鱼雷+
+22 42 回避 回避+
+40 70 对空 对空+
+0 25 对潜  航速
+38 63 索敌 索敌+
+1 22 射程 幸运
+30 40 燃料 弹药
+20 15 5 0 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_125.png
+bro
+L_BROKEN_125.png
+>
+<126 普林斯顿
+3 1 36 稀有度 类型 耐久
+0 20 火力 火力+
+20 40 装甲 装甲+
+0 0 鱼雷 鱼雷+
+28 52 回避 回避+
+45 65 对空 对空+
+0 31 对潜  航速
+39 64 索敌 索敌+
+1 10 射程 幸运
+35 40 燃料 弹药
+10 15 10 0 搭载
+52 10 改造等级 改造核心
+nor
+L_NORMAL_126.png
+bro
+L_BROKEN_126.png
+>
+<127 独角兽
+3 1 43 稀有度 类型 耐久
+0 20 火力 火力+
+22 42 装甲 装甲+
+0 0 鱼雷 鱼雷+
+21 41 回避 回避+
+42 72 对空 对空+
+0 24 对潜  航速
+36 61 索敌 索敌+
+1 21 射程 幸运
+30 40 燃料 弹药
+20 10 5 0 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_127.png
+bro
+L_BROKEN_127.png
+>
+<226 埃塞克斯
+5 0 60 稀有度 类型 耐久
+0 40 火力 火力+
+35 60 装甲 装甲+
+0 0 鱼雷 鱼雷+
+30 50 回避 回避+
+60 90 对空 对空+
+0 33 对潜  航速
+50 75 索敌 索敌+
+1 55 射程 幸运
+60 60 燃料 弹药
+18 18 36 18 搭载
+0 0 改造等级 改造核心
+nor
+L_NORMAL_226.png
+bro
+L_BROKEN_226.png
+>

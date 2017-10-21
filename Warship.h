@@ -46,6 +46,7 @@ public:
 
 	void attack(Warship *enemy);
 	void getDamage(int damage);
+	bool busy() { return repairing; }
 	void sink();
 	void addExp(int exp);
 	int totalHuoli() const { return base->huoli + plusHuoli; }
@@ -64,6 +65,7 @@ public:
 	int plusHuoli, plusZhuangjia, plusYulei, plusDuikong;
 	int skillLevel;
 	EquipBlock *eqBlock[MAX_EQUIP];
+	int oil, bullet;
 
 	//Õ½¶·Ê±
 	typedef void (*SKILL)();

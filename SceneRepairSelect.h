@@ -1,13 +1,12 @@
 #pragma once
 #include "Scene.h"
+#include "SceneWithPage.h"
 class SceneRepairSelect :
-	public Scene
+	public SceneWithPage
 {
 public:
 	SceneRepairSelect();
 	~SceneRepairSelect();
-	void MoveIn(bool moveInEffect);
 	void updatePage();
-	int page;
 };
 

@@ -19,6 +19,40 @@ void ComTroopWhichOnClick(Component *self, int x, int y, WPARAM wParam)
 		}
  	}
 }
+bool rqNeedBuJi(Warship *w, LPARAM, WPARAM) {
+	int maxOil = w->base->oil;
+	int maxBullet = w->base->bullet;
+	return w->oil < maxOil || w->bullet < maxBullet;
+}
+void buji(Scene *scene) {
+	vector<Warship *> find = db->requestShips(rqNeedBuJi, 0, 0);
+	int totalOil = 0, totalBullet = 0;
+	for (vector<Warship *>::iterator it = find.begin(); it != find.end(); it++) {
+		Warship *w = *it;
+		totalOil += w->base->oil - w->oil;
+		totalBullet += w->base->bullet - w->bullet;
+	}
+	if (totalOil == 0 && totalBullet == 0) {
+		scene->SceneMessageBox(L"补给", L"当前没有舰船需要补给", 0);
+		return;
+	}
+	wchar_t msg[64];
+	wsprintf(msg, L"要补给所有舰船吗？（将消耗%d燃油与%d弹药）", totalOil, totalBullet);
+	if (scene->SceneMessageBox(L"补给", msg, 0)) {
+		if (totalOil > db->oil || totalBullet > db->bullet) {
+			scene->SceneMessageBox(L"补给", L"资源不足，补给失败", 0);
+			return;
+		}
+		db->oil -= totalOil;
+		db->bullet -= totalBullet;
+		for (vector<Warship *>::iterator it = find.begin(); it != find.end(); it++) {
+			Warship *w = *it;
+			w->oil = w->base->oil;
+			w->bullet = w->base->bullet;
+		}
+		scene->SceneMessageBox(L"补给", L"补给完毕", 0);
+	}
+}
 void ComDockMenuOnClick(Component *self, int x, int y, WPARAM wParam)
 {
 	if (x >= 10 && x <= 100) {
@@ -30,13 +64,14 @@ void ComDockMenuOnClick(Component *self, int x, int y, WPARAM wParam)
 			self->scene->MoveToOtherScene(sceneRepair, false, true);
 		}
 		else if (y >= 187 && y <= 237) {
-			self->scene->SceneMessageBox(L"啊啊", L"很可惜补给功能还没有写好", 0);
+			buji(self->scene);
 		}
 		else if (y >= 265 && y <= 315) {
 			self->scene->SceneMessageBox(L"啊啊", L"很可惜装备功能还没有写好", 0); 
 		}
 	}
 }
+
 SceneTroop::SceneTroop(wstring bg, Troop *troop):
 	Scene(bg)
 {
@@ -65,8 +100,6 @@ SceneTroop::SceneTroop(wstring bg, Troop *troop):
 	comMenu->SetChangingSceneBehaivor(-150, 0);
 	comMenu->InstallOnClick(ComDockMenuOnClick);
 	AddComponent(comMenu);
-
-
 }
 
 

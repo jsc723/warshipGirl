@@ -5,7 +5,7 @@ class SceneTimerDependent :
 {
 public:
 	SceneTimerDependent(wstring bg);
-	~SceneTimerDependent();
+	virtual ~SceneTimerDependent();
 protected:
 	virtual void initTimerComponents() = 0;
 	virtual void updateTimerComponents() = 0;

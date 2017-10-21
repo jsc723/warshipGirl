@@ -1,26 +1,8 @@
 #include "stdafx.h"
 #include "SceneRepairSelect.h"
 
-void ComShipRepairSelectRetClick(Component *self, int x, int y, WPARAM wParam)
-{
-	x -= self->x;
-	y -= self->y;
-	if (x > 27 && y > 500 && x < 105 && y < 546) {
-		self->scene->MoveToOtherScene(sceneLast, false);
-	}
-	else {
-		wchar_t message[50];
-		wsprintf(message, L"ShipListOpt (%d,%d) clicked!", x, y);
-		self->scene->ShowText(message, 1000);
-	}
-}
-void ComShipRepairSelectArwOnClick(Component *self, int x, int y, WPARAM wParam)
-{
-	((SceneRepairSelect *)self->scene)->page += self->lParam;
-	((SceneRepairSelect *)self->scene)->updatePage();
-}
 SceneRepairSelect::SceneRepairSelect():
-	Scene(L"ship_bg.png")
+	SceneWithPage(L"ship_bg.png")
 {
 	page = 0;
 	for (size_t i = 0; i < 6; i++) {
@@ -28,7 +10,7 @@ SceneRepairSelect::SceneRepairSelect():
 	}
 	const int optionBarWidth = 119;
 	Component *comShipListOption = new Component(L"ShipRepairSelectRight.png", W - optionBarWidth, 0, 1.0f, 0);
-	comShipListOption->InstallOnClick(ComShipRepairSelectRetClick);
+	comShipListOption->InstallOnClick(ComRightOptOnClick);
 	comShipListOption->SetChangingSceneBehaivor(optionBarWidth, 0);
 	AddComponent(comShipListOption); //7
 
@@ -40,28 +22,12 @@ SceneRepairSelect::SceneRepairSelect():
 	comLeft->SetChangingSceneBehaivor(-218, 0);
 	AddComponent(comLeft);//9
 
-	Component *comLeftArr = new Component(L"arr_left.png", 925, 300, 0.4f, -1);
-	comLeftArr->InstallOnClick(ComShipRepairSelectArwOnClick);
-	comLeftArr->SetChangingSceneBehaivor(optionBarWidth, 0);
-	AddComponent(comLeftArr); //10
-
-	Component *comRightArr = new Component(L"arr_right.png", 975, 300, 0.4f, 1);
-	comRightArr->InstallOnClick(ComShipRepairSelectArwOnClick);
-	comRightArr->SetChangingSceneBehaivor(optionBarWidth, 0);
-	AddComponent(comRightArr); //11
+	AddArrows(optionBarWidth, 925, 300);//10, 11
 
 	AddResourceBar(-optionBarWidth);//12
 }
-
-void SceneRepairSelect::MoveIn(bool moveInEffect)
-{
-	Scene::MoveIn(moveInEffect);
-	page = 0;
-	updatePage();
-}
-
 bool rqHurted(Warship *w, LPARAM , WPARAM) {
-	return w->hp < w->base->maxHp;
+	return w->hp < w->base->maxHp && !w->busy();
 }
 
 void ComShipRepairSelectUnitOnClick(Component *self, int x, int y, WPARAM wParam) {

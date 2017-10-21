@@ -6,26 +6,8 @@ void ComLeaveOnClick(Component *self, int x, int y, WPARAM wParam)
 	db->setTroopMem(NULL);
 	self->scene->MoveToOtherScene(sceneLast,false);
 }
-void ComShipListOptOnClick(Component *self, int x, int y, WPARAM wParam) 
-{
-	x -= self->x;
-	y -= self->y;
-	if (x > 27 && y > 500 && x < 105 && y < 546) {
-		self->scene->MoveToOtherScene(sceneLast,false);
-	}
-	else {
-		wchar_t message[50];
-		wsprintf(message, L"ShipListOpt (%d,%d) clicked!", x, y);
-		self->scene->ShowText(message, 1000);
-	}
-}
-void ComShipListArwOnClick(Component *self, int x, int y, WPARAM wParam)
-{
-	((SceneShipList *)self->scene)->page  += self->lParam;
-	((SceneShipList *)self->scene)->updatePage();
-}
 SceneShipList::SceneShipList():
-	Scene(L"ship_bg.png")
+	SceneWithPage(L"ship_bg.png")
 {
 	page = 0;
 	for (size_t i = 0; i < 16; i++) {
@@ -33,26 +15,17 @@ SceneShipList::SceneShipList():
 	}
 	const int optionBarWidth = 123;
 	Component *comShipListOption = new Component(L"ShipListOption.png", W - optionBarWidth, 0, 0.8f, 0);//0
-	comShipListOption->InstallOnClick(ComShipListOptOnClick);
+	comShipListOption->InstallOnClick(ComRightOptOnClick);
 	comShipListOption->SetChangingSceneBehaivor(optionBarWidth, 0);
 	AddComponent(comShipListOption); //17
 
-	Component *comLeftArr = new Component(L"arr_left.png", 925, 320, 0.4f, -1);
-	comLeftArr->InstallOnClick(ComShipListArwOnClick);
-	comLeftArr->SetChangingSceneBehaivor(optionBarWidth, 0);
-	AddComponent(comLeftArr); //18
-
-	Component *comRightArr = new Component(L"arr_right.png", 975, 320, 0.4f, 1);
-	comRightArr->InstallOnClick(ComShipListArwOnClick);
-	comRightArr->SetChangingSceneBehaivor(optionBarWidth, 0);
-	AddComponent(comRightArr); //19
+	AddArrows(optionBarWidth, 925, 320);//18, 19
 
 	Component *comLeaveTroopBtn = new Component(L"ShipListLeaveBtn.png", 920, 400, 0.67f,0);//1
 	comLeaveTroopBtn->InstallOnClick(ComLeaveOnClick);
 	comLeaveTroopBtn->SetChangingSceneBehaivor(optionBarWidth, 0);
 	AddComponent(comLeaveTroopBtn);
 
-	
 	AddResourceBar(-optionBarWidth);
 }
 
@@ -60,13 +33,14 @@ SceneShipList::SceneShipList():
 SceneShipList::~SceneShipList()
 {
 }
-
+/*
 void SceneShipList::MoveIn(bool moveInEffect)
 {
 	Scene::MoveIn(moveInEffect);
 	page = 0;
 	updatePage();
 }
+*/
 
 bool rqAllButChoosing(Warship *w, LPARAM choosing, WPARAM) {
 	return w != (Warship *)choosing;

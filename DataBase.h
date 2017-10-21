@@ -41,30 +41,28 @@ public:
 	vector<Warship *> requestShips(RQ_CONDFUNC requestCondFunc, LPARAM lParam, WPARAM wParam);
 	wstring warshipTypeToWs(WarshipType type);
 	Bitmap* getBitmap(wstring name);
+	WarshipData *getBaseInfo(int id) { return warshipData[id]; }
 	void OnTimer(int id);
 public:
 	static const int MAX_TROOP = 4;
+	static const int MAX_BUILDER = 4;
+	static const int MAX_REPAIR = 4;
 	map <wstring, wstring> pathList;
 	d3dTexture *shipBKTexture[6], *comTroopUnitEmptyTexture;
 	Troop troops[MAX_TROOP];
-	map <int, Equip *> equipData;
-	map <int, WarshipData *> warshipData;
-	map <int, int> warshipIndexToID;
+	
 	vector<Warship *> warships;
 	vector<Equip *> equips;
 	int oil, bullet, steel, alumin, diamond;
 	int ring, quZhuCore, xunYangCore, zhanLieCore, hangMuCore, qianTinCore;
 	int panntsu, quickRepair, quickBuild, shipBlueprint, equipBlueprint;
 	int exp, level;
-	int nextIndex;//决定下一个新船的编号
+	
 	int mishuIndex;
 
 	bool buildShipStateChanged;
-	static const int MAX_BUILDER = 4;
 	WorkingState buildShips[MAX_BUILDER];
-
 	bool repairShipStateChanged;
-	static const int MAX_REPAIR = 4;
 	WorkingState repairShips[MAX_REPAIR];
 
 public:
@@ -73,8 +71,12 @@ public:
 	void removeTroopMem(int troopId, int idInTroop);
 	Warship *getNowChoosingShip() { return nowChoosingShip; }
 private:
-	map <wstring, Bitmap*> imgs;
+	map <int, Equip *> equipData;
+	map <int, WarshipData *> warshipData;
+	map <int, int> warshipIndexToID;
+	int nextIndex;//决定下一个新船的编号
 
+	map <wstring, Bitmap*> imgs;
 	int nowChoosingTroopId, nowChoosingShipIdInTroop;
 	Warship *nowChoosingShip;
 

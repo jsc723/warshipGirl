@@ -158,6 +158,11 @@ DataBase::DataBase()
 		getline(in, line);  ss.clear(); ss.str(line);
 		ss >> ws->hp;
 
+		//getline(in, line);  ss.clear(); ss.str(line);
+		//ss >> ws->oil >> ws->bullet;
+		ws->oil = ws->base->oil;
+		ws->bullet = ws->base->bullet;
+
 		getline(in, line);  ss.clear(); ss.str(line);
 		ss >> ws->locked >> ws->married >> ws->repairing;
 
@@ -212,6 +217,7 @@ DataBase::~DataBase()
 		Warship *ws = *it;
 		out << "<" << ws->id << " " << ws2s(ws->base->name) << endl;
 		out << ws->hp << " hp" << endl;
+		out << ws->oil << " " << ws->bullet << " oil bullet" << endl;
 		out << (ws->locked ? 1 : 0) << " " << (ws->married ? 1 : 0) <<" "<<
 			(ws->repairing ? 1 : 0) << " locked married repairing" << endl;
 		out << ws->love << " " << ws->level << " love level" << endl;

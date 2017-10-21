@@ -1,14 +1,13 @@
 #pragma once
 #include "Scene.h"
 #include "ComponentShipListUnit.h"
+#include "SceneWithPage.h"
 class SceneShipList :
-	public Scene
+	public SceneWithPage
 {
 public:
 	SceneShipList();
 	~SceneShipList();
-	void MoveIn(bool moveInEffect);
 	void updatePage();
-	int page;
 };
 

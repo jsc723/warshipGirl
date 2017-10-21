@@ -30,7 +30,7 @@ Warship::Warship(int id, int index)
 {
 	this->id = id;
 	this->index = index;
-	base = db->warshipData[id];
+	base = db->getBaseInfo(id);
 	hp = base->maxHp;
 	married = locked = repairing = false;
 	love = 50;

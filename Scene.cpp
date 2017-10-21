@@ -297,3 +297,17 @@ void Scene::ShowText(wstring text, int time_ms)
 	this->text = text;
 	timerIdShowText = timer->AddMilliTimer(time_ms, 1, this);
 }
+//sceneShipList & sceneRepairSelect both use this
+void ComRightOptOnClick(Component *self, int x, int y, WPARAM wParam)
+{
+	x -= self->x;
+	y -= self->y;
+	if (x > 27 && y > 500 && x < 105 && y < 546) {
+		self->scene->MoveToOtherScene(sceneLast, false);
+	}
+	else {
+		wchar_t message[50];
+		wsprintf(message, L"ShipListOpt (%d,%d) clicked!", x, y);
+		self->scene->ShowText(message, 1000);
+	}
+}

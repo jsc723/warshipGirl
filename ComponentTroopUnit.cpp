@@ -8,33 +8,15 @@ void ComTroopUnitOnClick(Component *self, int x, int y, WPARAM wParam)
 	self->scene->MoveToOtherScene(sceneShipList, false);
 }
 //troop_4_6_id : 十位表示第几舰队（0-3），个位表示该舰队中的第几条船（0-5）
-ComponentTroopUnit::ComponentTroopUnit(wstring imgName, Warship *warship, int x, int y, LPARAM troop_4_6_id):
-	Component(imgName, x,y, troop_4_6_id)
-{
-	this->warship = warship;
-	InstallOnClick(ComTroopUnitOnClick);
-}
-
 ComponentTroopUnit::ComponentTroopUnit(wstring imgName, Warship * warship, int x, int y, float r, LPARAM troop_4_6_id):
-	Component(imgName, x, y, r, troop_4_6_id)
+	ComponentWithPicture(imgName, warship, x, y, r, troop_4_6_id)
 {
-	this->warship = warship;
 	InstallOnClick(ComTroopUnitOnClick);
 }
-
-ComponentTroopUnit::ComponentTroopUnit(wstring imgName, Warship *warship, int x, int y, int cx, int cy, LPARAM troop_4_6_id):
-	Component(imgName, x, y, cx, cy, troop_4_6_id)
-{
-	this->warship = warship;
-	InstallOnClick(ComTroopUnitOnClick);
-}
-
 ComponentTroopUnit::~ComponentTroopUnit()
 {
-	EndPaint();
-	Component::~Component();
 }
-
+/*
 void ComponentTroopUnit::AddToScene(Scene * scene, int id)
 {
 	this->scene = scene;
@@ -55,22 +37,8 @@ void ComponentTroopUnit::StartPaint()
 		wsTexture = new d3dTexture(db->pathList[warship->base->normalPng[0]].c_str(),
 			db->getBitmap(warship->base->normalPng[0]));
 }
-
-void ComponentTroopUnit::EndPaint()
-{
-	Component::EndPaint();
-	if (wsTexture) {
-		delete wsTexture;
-		wsTexture = NULL;
-	}
-}
-
-void ComponentTroopUnit::OnPaint()
-{
-	OnPaint(0, 0, cx, cy);
-}
-
-void ComponentTroopUnit::OnPaint(int DX, int DY,int w, int h)
+*/
+void ComponentTroopUnit::OnPaint(int DX, int DY,int w, int h, int a, D3DCOLOR diffuse)
 {
 	if (warship != NULL)
 	{

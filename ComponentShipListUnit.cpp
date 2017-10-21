@@ -9,16 +9,11 @@ void ComShipListUnitOnClick(Component *self, int x, int y, WPARAM wParam)
 }
 
 ComponentShipListUnit::ComponentShipListUnit(Warship *warship, int x, int y, float r) :
-	ComponentTroopUnit(L"ShipListUnit.png", warship, x, y, r, 0)
+	ComponentWithPicture(L"ShipListUnit.png", warship, x, y, r, 0)
 {
 	InstallOnClick(ComShipListUnitOnClick);
 }
-ComponentShipListUnit::ComponentShipListUnit(Warship *warship, int x, int y, int cx, int cy):
-	ComponentTroopUnit(L"ShipListUnit.png", warship, x, y, cx,cy,0)
-{
-	InstallOnClick(ComShipListUnitOnClick);
-}
-void ComponentShipListUnit::OnPaint(int DX, int DY,int w, int h)
+void ComponentShipListUnit::OnPaint(int DX, int DY,int w, int h, int a, D3DCOLOR diffuse)
 {
 	if (warship != NULL)
 	{
@@ -48,5 +43,4 @@ void ComponentShipListUnit::OnPaint(int DX, int DY,int w, int h)
 
 ComponentShipListUnit::~ComponentShipListUnit()
 {
-	ComponentTroopUnit::EndPaint();
 }

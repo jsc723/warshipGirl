@@ -10,8 +10,8 @@ public:
 	void OnTimer(int id);
 	void MoveIn();
 	void DrawNormalComponents();
-	int lastTime[DataBase::MAX_BUILDER];
 private:
+	int lastTime[DataBase::MAX_BUILDER];
 	void initTimerComponents();
 	void updateTimerComponents();
 	Component * timerComUpdateHelper(int i);

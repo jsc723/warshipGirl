@@ -16,7 +16,7 @@ ComponentDynamic::~ComponentDynamic()
 }
 
 
-void ComponentDynamic::OnPaint()
+void ComponentDynamic::OnPaint(int , int , int , int , int , D3DCOLOR)
 {
 	if (imgTexture == NULL) return;
 	int x = CD_X();
