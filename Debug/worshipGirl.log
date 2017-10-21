@@ -1,6 +1,58 @@
-﻿  DataBase.cpp
+﻿  stdafx.cpp
+  d3dHdc.cpp
+  WarshipGirl.cpp
+  Warship.cpp
+  Troop.cpp
+  SceneWithPage.cpp
+  SceneTroop.cpp
+  SceneTimerDependent.cpp
+  SceneShipList.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\sceneshiplist.cpp(49): warning C4018: “<=”: 有符号/无符号不匹配
+  SceneRepairSelect.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scenerepairselect.cpp(49): warning C4018: “<=”: 有符号/无符号不匹配
+  SceneRepair.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scenerepair.cpp(98): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+  SceneDock.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scenedock.cpp(25): warning C4305: “参数”: 从“double”到“float”截断
+  SceneBuildShip.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scenebuildship.cpp(54): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scenebuildship.cpp(154): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+  Scene.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(79): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(84): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(190): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(203): warning C4018: “<”: 有符号/无符号不匹配
+  MyTimer.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\mytimer.cpp(117): warning C4244: “=”: 从“time_t”转换到“int”，可能丢失数据
+  LabelStr.cpp
+  LabelInt.cpp
+  Equip.cpp
+  DataBase.cpp
 c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\database.cpp(10): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
 c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\database.cpp(289): warning C4018: “<”: 有符号/无符号不匹配
 c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\database.cpp(320): warning C4018: “<”: 有符号/无符号不匹配
+  ComponentWithPicture.cpp
+  ComponentTroopUnit.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(52): warning C4244: “参数”: 从“float”转换到“D3DCOLOR”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(54): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(68): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(71): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(74): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(77): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(80): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componenttroopunit.cpp(83): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+  正在编译...
+  ComponentShipListUnit.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componentshiplistunit.cpp(27): warning C4244: “参数”: 从“float”转换到“D3DCOLOR”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componentshiplistunit.cpp(33): warning C4101: “str”: 未引用的局部变量
+  ComponentMsgBox.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componentmsgbox.cpp(26): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componentmsgbox.cpp(32): warning C4244: “return”: 从“float”转换到“int”，可能丢失数据
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componentmsgbox.cpp(41): warning C4244: “=”: 从“int”转换到“float”，可能丢失数据
+  ComponentDynamic.cpp
+c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\componentdynamic.cpp(28): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+  Component.cpp
+  正在生成代码...
   worshipGirl.vcxproj -> C:\Users\jscjs\OneDrive\Documents\Visual Studio 2015\Projects\vc++practice\worshipGirl\Debug\WarshipGirl.exe
   worshipGirl.vcxproj -> C:\Users\jscjs\OneDrive\Documents\Visual Studio 2015\Projects\vc++practice\worshipGirl\Debug\WarshipGirl.pdb (Full PDB)

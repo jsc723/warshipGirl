@@ -33,14 +33,6 @@ SceneShipList::SceneShipList():
 SceneShipList::~SceneShipList()
 {
 }
-/*
-void SceneShipList::MoveIn(bool moveInEffect)
-{
-	Scene::MoveIn(moveInEffect);
-	page = 0;
-	updatePage();
-}
-*/
 
 bool rqAllButChoosing(Warship *w, LPARAM choosing, WPARAM) {
 	return w != (Warship *)choosing;

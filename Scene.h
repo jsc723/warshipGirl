@@ -24,8 +24,6 @@ extern SceneRepair *sceneRepair;
 extern SceneRepairSelect *sceneRepairSelect;
 extern MyTimer *timer;
 extern DataBase *db;
-extern HDC mdc, bufdc;
-extern HBITMAP buf;
 extern HWND hWnd;
 extern LPD3DXFONT fontDebugInfo, fontShipInfo, fontMsg;
 //*/
@@ -72,13 +70,14 @@ public:
 	void DelShade();
 	bool SceneMessageBox(LPWSTR title, LPWSTR msg, int option, POINT pt = { (W - 530) / 2,(H - 314) / 2 });
 
+	int onClickDecide[W][H];
+protected:
 	int timerIdShowText;
 	int IN_FM;
 	Bitmap *bg;
 	d3dTexture *bgTexture;
 	Scene *next;
 	vector<Component *> components;
-	int onClickDecide[W][H];
 	std::wstring text, bgFileName;
 
 	State state;
