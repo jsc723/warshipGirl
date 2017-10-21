@@ -231,7 +231,7 @@
 0 29 skillLevel index(unique)
 >
 #
-5530 6030 8030 3050 940 oil bullet steel alumin diamond
+5480 6010 8030 3050 940 oil bullet steel alumin diamond
 30 8 nextIndex mishuIndex
 0 0 0 0 buildShips states
 0 0 0 0 repairShips states

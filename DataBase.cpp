@@ -158,10 +158,10 @@ DataBase::DataBase()
 		getline(in, line);  ss.clear(); ss.str(line);
 		ss >> ws->hp;
 
-		//getline(in, line);  ss.clear(); ss.str(line);
-		//ss >> ws->oil >> ws->bullet;
-		ws->oil = ws->base->oil;
-		ws->bullet = ws->base->bullet;
+		getline(in, line);  ss.clear(); ss.str(line);
+		ss >> ws->oil >> ws->bullet;
+		//ws->oil = ws->base->oil;
+		//ws->bullet = ws->base->bullet;
 
 		getline(in, line);  ss.clear(); ss.str(line);
 		ss >> ws->locked >> ws->married >> ws->repairing;
