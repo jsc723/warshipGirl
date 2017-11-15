@@ -1,11 +1,6 @@
 #include "stdafx.h"
 #include "SceneShipList.h"
 
-void ComLeaveOnClick(Component *self, int x, int y, WPARAM wParam)
-{
-	db->setTroopMem(NULL);
-	self->scene->MoveToOtherScene(sceneLast,false);
-}
 SceneShipList::SceneShipList():
 	SceneWithPage(L"ship_bg.png")
 {
@@ -22,7 +17,11 @@ SceneShipList::SceneShipList():
 	AddArrows(optionBarWidth, 925, 320);//18, 19
 
 	Component *comLeaveTroopBtn = new Component(L"ShipListLeaveBtn.png", 920, 400, 0.67f,0);//1
-	comLeaveTroopBtn->InstallOnClick(ComLeaveOnClick);
+	comLeaveTroopBtn->InstallOnClick([](Component *self, int x, int y, WPARAM wParam)
+	{
+		db->setTroopMem(NULL);
+		self->scene->MoveToOtherScene(sceneLast, false);
+	});
 	comLeaveTroopBtn->SetChangingSceneBehaivor(optionBarWidth, 0);
 	AddComponent(comLeaveTroopBtn);
 

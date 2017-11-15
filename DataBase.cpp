@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include "DataBase.h"
-
+#include <algorithm>
 
 DataBase::DataBase()
 {
@@ -13,7 +13,8 @@ DataBase::DataBase()
 	nowChoosingShip = NULL;
 	vector<wstring> files;
 	getFiles("res/extraUI", "png", files);
-	for (vector<wstring>::iterator file = files.begin(); file != files.end(); file++)
+	
+	for (auto file = files.begin(); file != files.end(); file++)
 	{
 		Bitmap *i = new Bitmap(file->c_str());
 		wstring s = file->substr(file->find_last_of(L'/') + 1);
@@ -26,11 +27,11 @@ DataBase::DataBase()
 	getFiles("res/立绘图包/不破", "png", files);
 	getFiles("res/立绘图包/破", "png", files);
 	getFiles("res/装备", "png", files);
-	for (vector<wstring>::iterator file = files.begin(); file != files.end(); file++)
-	{
-		wstring s = file->substr(file->find_last_of(L'/') + 1);
-		pathList[s] = *file;
-	}
+
+	for_each(begin(files), end(files), [&](auto file) mutable {
+		wstring s = file.substr(file.find_last_of(L'/') + 1);
+		pathList[s] = file;
+	});
 	shipBKTexture[0] = new d3dTexture(L"res/extraUI/ship_star_bg1.png", imgs[L"ship_star_bg1.png"]);
 	shipBKTexture[1] = new d3dTexture(L"res/extraUI/ship_star_bg2.png", imgs[L"ship_star_bg2.png"]);
 	shipBKTexture[2] = new d3dTexture(L"res/extraUI/ship_star_bg3.png", imgs[L"ship_star_bg3.png"]);
@@ -212,9 +213,8 @@ DataBase::~DataBase()
 {
 	ofstream out("res/gameData/UserData.txt");
 	
-	for (vector<Warship *>::iterator it = warships.begin(); it != warships.end(); it++)
+	for (auto ws : warships)
 	{
-		Warship *ws = *it;
 		out << "<" << ws->id << " " << ws2s(ws->base->name) << endl;
 		out << ws->hp << " hp" << endl;
 		out << ws->oil << " " << ws->bullet << " oil bullet" << endl;

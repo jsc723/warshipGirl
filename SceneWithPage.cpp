@@ -21,6 +21,13 @@ void SceneWithPage::MoveIn(bool moveInEffect)
 void SceneWithPage::AddArrows(int optionBarWidth, int x, int y)
 {
 	Component *comLeftArr = new Component(L"arr_left.png", x, y, 0.4f, -1);
+
+	auto ComPageArwOnClick = [](Component * self, int x, int y, WPARAM wParam)
+	{
+		((SceneShipList *)self->scene)->page += self->lParam;
+		((SceneShipList *)self->scene)->updatePage();
+	};
+
 	comLeftArr->InstallOnClick(ComPageArwOnClick);
 	comLeftArr->SetChangingSceneBehaivor(optionBarWidth, 0);
 	AddComponent(comLeftArr); 
@@ -31,8 +38,3 @@ void SceneWithPage::AddArrows(int optionBarWidth, int x, int y)
 	AddComponent(comRightArr); 
 }
 
-void ComPageArwOnClick(Component * self, int x, int y, WPARAM wParam)
-{
-	((SceneShipList *)self->scene)->page += self->lParam;
-	((SceneShipList *)self->scene)->updatePage();
-}

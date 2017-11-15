@@ -1,0 +1,242 @@
+<1 胡德
+75 hp
+70 120 oil bullet
+1 0 0 locked married repairing
+67 3 love level
+10 0 10 5 huoli+ yulei+ zhuangjia+ duikong+
+0 0 skillLevel index(unique)
+>
+<38 欧根亲王
+54 hp
+35 65 oil bullet
+1 1 0 locked married repairing
+123 5 love level
+10 25 10 5 huoli+ yulei+ zhuangjia+ duikong+
+0 1 skillLevel index(unique)
+>
+<30 萨拉托加
+63 hp
+55 60 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 2 skillLevel index(unique)
+>
+<3 山城
+67 hp
+85 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 3 skillLevel index(unique)
+>
+<4 伊势
+74 hp
+85 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 4 skillLevel index(unique)
+>
+<65 白雪
+15 hp
+15 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 6 skillLevel index(unique)
+>
+<4 伊势
+74 hp
+85 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 7 skillLevel index(unique)
+>
+<65 白雪
+12 hp
+15 20 oil bullet
+0 0 1 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 8 skillLevel index(unique)
+>
+<2 扶桑
+67 hp
+85 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 9 skillLevel index(unique)
+>
+<64 吹雪
+15 hp
+15 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 10 skillLevel index(unique)
+>
+<29 列克星敦
+60 hp
+55 60 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 11 skillLevel index(unique)
+>
+<4 伊势
+74 hp
+85 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 12 skillLevel index(unique)
+>
+<13 安德烈亚·多利亚
+54 hp
+70 110 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 13 skillLevel index(unique)
+>
+<64 吹雪
+15 hp
+15 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 14 skillLevel index(unique)
+>
+<30 萨拉托加
+63 hp
+55 60 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 15 skillLevel index(unique)
+>
+<74 Z1
+14 hp
+10 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 16 skillLevel index(unique)
+>
+<18 声望
+65 hp
+70 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 17 skillLevel index(unique)
+>
+<13 安德烈亚·多利亚
+54 hp
+70 110 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 18 skillLevel index(unique)
+>
+<75 Z16
+17 hp
+10 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 19 skillLevel index(unique)
+>
+<117 大凤
+67 hp
+70 65 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 20 skillLevel index(unique)
+>
+<9 罗德尼
+72 hp
+90 140 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 21 skillLevel index(unique)
+>
+<125 巨像
+40 hp
+30 40 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 22 skillLevel index(unique)
+>
+<4 伊势
+74 hp
+85 120 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 23 skillLevel index(unique)
+>
+<117 大凤
+67 hp
+70 65 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 24 skillLevel index(unique)
+>
+<59 海伦娜
+33 hp
+30 35 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 25 skillLevel index(unique)
+>
+<72 绫波
+15 hp
+15 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 26 skillLevel index(unique)
+>
+<123 博格
+35 hp
+35 40 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 27 skillLevel index(unique)
+>
+<226 埃塞克斯
+60 hp
+60 60 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 28 skillLevel index(unique)
+>
+<75 Z16
+18 hp
+10 20 oil bullet
+0 0 0 locked married repairing
+50 1 love level
+0 0 0 0 huoli+ yulei+ zhuangjia+ duikong+
+0 29 skillLevel index(unique)
+>
+#
+5480 6010 8030 3050 940 oil bullet steel alumin diamond
+30 8 nextIndex mishuIndex
+0 0 0 0 buildShips states
+0 0 0 0 repairShips states
+13 17 3 16 2 20 troop0
+10 25 26 27 28 -1 troop1
+8 -1 -1 -1 -1 -1 troop2
+1 -1 -1 -1 -1 -1 troop3
+#

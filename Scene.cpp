@@ -52,16 +52,14 @@ void Scene::AddResourceBar(int dx)
 	AddComponent(resourceBar);
 }
 
-void ComponentReturnDockOnClick(Component *self, int x, int y, WPARAM wParam)
-{
-	self->scene->MoveToOtherScene(sceneDock);
-}
-
 
 void Scene::AddReturnBtn()
 {
 	Component *returnDock = new Component(L"returnDock.png", 0, H - 105, 0);
-	returnDock->InstallOnClick(ComponentReturnDockOnClick);
+	returnDock->InstallOnClick([](Component *self, int x, int y, WPARAM wParam)
+	{
+		self->scene->MoveToOtherScene(sceneDock);
+	});
 	returnDock->SetChangingSceneBehaivor(-150, 0);
 	AddComponent(returnDock);
 }
@@ -97,14 +95,13 @@ void Scene::DelComponent(Component * com)
 	}
 }
 
-void ComOnClickNULL(Component *self, int x, int y, WPARAM wParam) {}
 
 void Scene::AddShade()
 {
 	Component *shade = new Component(L"black.png", 0, 0, Component::LP_SHADE);
 	shade->diffuse = D3DCOLOR_ARGB(128, 255, 255, 255);
 	shade->StartPaint();
-	shade->InstallOnClick(ComOnClickNULL);
+	shade->InstallOnClick([](Component *self, int x, int y, WPARAM wParam) {/*do nothing*/});
 	AddComponent(shade);
 	shadeCount++;
 }
@@ -160,12 +157,12 @@ bool Scene::SceneMessageBox(LPWSTR title, LPWSTR msg, int option, POINT pt)
 Scene::~Scene()
 {
 	EndPaint();
-	for (vector<Component *>::iterator it = components.begin(); it != components.end(); it++)
-		if (NULL != *it)
-		{
-			delete *it;
-			*it = NULL;
+	for (auto &c : components) {
+		if (NULL != c) {
+			delete c;
+			c = NULL;
 		}
+	}
 	components.clear();
 	timer->KillTimer(DISPID_TEXT);
 }
@@ -173,10 +170,9 @@ void Scene::StartPaint()
 {
 	bgTexture = new d3dTexture(db->pathList[bgFileName.c_str()].c_str(),
 		db->getBitmap(bgFileName));
-	for (vector<Component *>::iterator it = components.begin();
-		it != components.end(); it++)
+	for (auto const &c : components)
 	{
-		(*it)->StartPaint();
+		c->StartPaint();
 	}
 }
 void Scene::DrawMovingComponents(bool movingIn)
@@ -240,10 +236,9 @@ void Scene::EndPaint()
 		delete bgTexture;
 		bgTexture = NULL;
 	}
-	for (vector<Component *>::iterator it = components.begin();
-		it != components.end(); it++)
+	for (auto c : components)
 	{
-		(*it)->EndPaint();
+		c->EndPaint();
 	}
 }
 

@@ -27,8 +27,7 @@ bool rqNeedBuJi(Warship *w, LPARAM, WPARAM) {
 void buji(Scene *scene) {
 	vector<Warship *> find = db->requestShips(rqNeedBuJi, 0, 0);
 	int totalOil = 0, totalBullet = 0;
-	for (vector<Warship *>::iterator it = find.begin(); it != find.end(); it++) {
-		Warship *w = *it;
+	for (auto w : find) {
 		totalOil += w->base->oil - w->oil;
 		totalBullet += w->base->bullet - w->bullet;
 	}
@@ -45,8 +44,7 @@ void buji(Scene *scene) {
 		}
 		db->oil -= totalOil;
 		db->bullet -= totalBullet;
-		for (vector<Warship *>::iterator it = find.begin(); it != find.end(); it++) {
-			Warship *w = *it;
+		for (auto w : find) {
 			w->oil = w->base->oil;
 			w->bullet = w->base->bullet;
 		}

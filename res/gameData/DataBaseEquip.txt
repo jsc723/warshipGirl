@@ -1,0 +1,10 @@
+<2 J国12厘米单装炮
+1 0 star type
+0 0 0 0 huibi, zhuangjia, mingzhong, xingyun;
+1 0 0 0 0 huoli, suodi, duikong, hongzha, yulei;
+0 0 naijiu, duikongBuzheng;
+0 4 10 0 time(h,m,s), aluminPerPlane;
+10 10 10 10 oil, bullet, steel, alumin;
+equip_L_2.png
+>
+
