@@ -56,8 +56,7 @@ void Scene::AddResourceBar(int dx)
 void Scene::AddReturnBtn()
 {
 	Component *returnDock = new Component(L"returnDock.png", 0, H - 105, 0);
-	returnDock->InstallOnClick([](Component *self, int x, int y, WPARAM wParam)
-	{
+	returnDock->InstallOnClick([](Component *self, int x, int y, WPARAM wParam) {
 		self->scene->MoveToOtherScene(sceneDock);
 	});
 	returnDock->SetChangingSceneBehaivor(-150, 0);

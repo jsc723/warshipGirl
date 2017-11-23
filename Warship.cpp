@@ -45,27 +45,6 @@ Warship::~Warship()
 
 }
 
-void Warship::attack(Warship * enemy)
-{
-	enemy->getDamage(base->huoli + plusHuoli);
-}
-
-void Warship::getDamage(int damage)
-{
-	if (sinked)
-		return;
-	damage -= base->zhuangjia + plusZhuangjia;
-	if (damage < 1)
-		damage = 1;
-	hp -= damage;
-	if (hp == 0)
-		sink();
-}
-
-void Warship::sink()
-{
-	sinked = true;
-}
 
 void Warship::addExp(int exp)
 {

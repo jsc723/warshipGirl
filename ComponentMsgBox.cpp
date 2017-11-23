@@ -16,7 +16,7 @@ ComponentMsgBox::~ComponentMsgBox()
 
 void ComponentMsgBox::closeMsgBox()
 {
-	state = MOVOUT;
+	state = CD_STATE::MOVOUT;
 	RunUntilFalse((bool *)&state);
 }
 
@@ -47,7 +47,7 @@ float ComponentMsgBox::CD_R()
 void ComponentMsgBox::updateState()
 {
 	if (frame == FM)
-		state = NORMAL;
+		state = CD_STATE::NORMAL;
 	else if (frame == 2 * FM)
-		state = END;
+		state = CD_STATE::END;
 }

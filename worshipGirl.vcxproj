@@ -149,6 +149,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BattleItem.h" />
+    <ClInclude Include="BattleMap.h" />
+    <ClInclude Include="BattleWarship.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="ComponentDynamic.h" />
     <ClInclude Include="ComponentMsgBox.h" />
@@ -180,6 +183,9 @@
     <ClInclude Include="WarshipGirl.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BattleItem.cpp" />
+    <ClCompile Include="BattleMap.cpp" />
+    <ClCompile Include="BattleWarship.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="ComponentDynamic.cpp" />
     <ClCompile Include="ComponentMsgBox.cpp" />

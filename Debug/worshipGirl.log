@@ -1,12 +1,5 @@
-﻿  Scene.cpp
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(79): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(84): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(189): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\scene.cpp(202): warning C4018: “<”: 有符号/无符号不匹配
-  DataBase.cpp
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\database.cpp(10): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\database.cpp(289): warning C4018: “<”: 有符号/无符号不匹配
-c:\users\jscjs\onedrive\documents\visual studio 2015\projects\vc++practice\worshipgirl\worshipgirl\database.cpp(320): warning C4018: “<”: 有符号/无符号不匹配
+﻿  BattleWarship.cpp
+  BattleMap.cpp
   正在生成代码...
   worshipGirl.vcxproj -> C:\Users\jscjs\OneDrive\Documents\Visual Studio 2015\Projects\vc++practice\worshipGirl\Debug\WarshipGirl.exe
   worshipGirl.vcxproj -> C:\Users\jscjs\OneDrive\Documents\Visual Studio 2015\Projects\vc++practice\worshipGirl\Debug\WarshipGirl.pdb (Full PDB)

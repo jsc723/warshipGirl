@@ -44,10 +44,7 @@ public:
 	Warship(int id,int index);
 	~Warship();
 
-	void attack(Warship *enemy);
-	void getDamage(int damage);
 	bool busy() { return repairing; }
-	void sink();
 	void addExp(int exp);
 	int totalHuoli() const { return base->huoli + plusHuoli; }
 	int totalYuLei() const { return base->yulei + plusYulei; }
@@ -67,10 +64,6 @@ public:
 	EquipBlock *eqBlock[MAX_EQUIP];
 	int oil, bullet;
 
-	//Õ½¶·Ê±
-	typedef void (*SKILL)();
-	SKILL buffSkill, attackSkill, defendSkill;
-	bool sinked;
 
 };
 

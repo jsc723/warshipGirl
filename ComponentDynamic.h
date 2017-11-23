@@ -4,7 +4,7 @@ class ComponentDynamic :
 	public Component
 {
 public:
-	typedef enum {END = 0,MOVIN,NORMAL,MOVOUT} CD_STATE;
+	enum class CD_STATE{END,MOVIN,NORMAL,TRANSIT,MOVOUT};
 	ComponentDynamic(wstring imgName, int x, int y, LPARAM lParam);
 	virtual ~ComponentDynamic();
 	virtual void OnPaint(int, int, int, int, int, D3DCOLOR);

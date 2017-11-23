@@ -105,6 +105,15 @@
     <ClInclude Include="SceneWithPage.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BattleItem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleWarship.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BattleMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -180,6 +189,15 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="SceneWithPage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleItem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleWarship.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BattleMap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
