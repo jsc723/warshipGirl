@@ -2,9 +2,10 @@
 #include "BattleWarship.h"
 
 
-BattleWarship::BattleWarship(Warship *w, wstring imgName, int x, int y):
-	BattleItem(imgName, x, y, 0),
-	w(w)
+BattleWarship::BattleWarship(wstring imgName, int x, int y, int force, Warship *w, int index):
+	BattleItem(imgName,x, y, force),
+	ComponentWithPicture(imgName, w, x, y, 0.5f, 0),
+	index(index)
 {
 }
 
@@ -15,20 +16,28 @@ BattleWarship::~BattleWarship()
 
 void BattleWarship::attack(BattleWarship * enemy)
 {
-	enemy->getDamage(w->base->huoli + w->plusHuoli);
+	enemy->getDamage(warship->base->huoli + warship->plusHuoli);
 }
 
 void BattleWarship::getDamage(int damage)
 {
-	damage -= w->base->zhuangjia + w->plusZhuangjia;
+	damage -= warship->base->zhuangjia + warship->plusZhuangjia;
 	if (damage < 1)
 		damage = 1;
-	w->hp -= damage;
-	if (w->hp == 0)
-		retreat();
+	warship->hp -= damage;
+	if (warship->hp <= 0) {
+		warship->hp = 0;
+	}
 }
 
-void BattleWarship::retreat()
+BattleWarship::BWStatus BattleWarship::status()
 {
-	//TODO
+	if (warship->hp >= warship->base->maxHp / 2) {
+		return BWStatus::Good;
+	}
+	else if (warship->hp > 0) {
+		return BWStatus::Broken;
+	}
+	return BWStatus::Retreated;
 }
+

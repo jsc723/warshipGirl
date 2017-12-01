@@ -19,7 +19,7 @@ typedef enum _WarshipType
 	ZhongXun, HangXun, LeiXun, QingXun, ZhongPao, QuZhu,
 	QianMu, QianTing, PaoQian, BuJi, DaoQu, FangQu, QiTa
 }WarshipType;
-typedef struct _WarshipData
+struct WarshipData
 {
 	WarshipType type;
 	wstring name;
@@ -34,7 +34,7 @@ typedef struct _WarshipData
 	int oil, bullet;
 	int dz1, dz2, dz3, dz4;
 	int gaiZaoLevel, gaiZaoCore;
-}WarshipData;
+};
 class Warship
 {
 public:

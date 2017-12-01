@@ -156,10 +156,12 @@
     <ClInclude Include="ComponentDynamic.h" />
     <ClInclude Include="ComponentMsgBox.h" />
     <ClInclude Include="ComponentShipListUnit.h" />
+    <ClInclude Include="ComponentVessel.h" />
     <ClInclude Include="ComponentWithPicture.h" />
     <ClInclude Include="d3dHdc.h" />
     <ClInclude Include="DataBase.h" />
     <ClInclude Include="Equip.h" />
+    <ClInclude Include="IDispatchable.h" />
     <ClInclude Include="Label.h" />
     <ClInclude Include="LabelInt.h" />
     <ClInclude Include="LabelStr.h" />
@@ -176,7 +178,7 @@
     <ClInclude Include="SceneWithPage.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
-    <ClInclude Include="TimerResponsable.h" />
+    <ClInclude Include="ITimerResponsable.h" />
     <ClInclude Include="Troop.h" />
     <ClInclude Include="ComponentTroopUnit.h" />
     <ClInclude Include="Warship.h" />
@@ -190,6 +192,7 @@
     <ClCompile Include="ComponentDynamic.cpp" />
     <ClCompile Include="ComponentMsgBox.cpp" />
     <ClCompile Include="ComponentShipListUnit.cpp" />
+    <ClCompile Include="ComponentVessel.cpp" />
     <ClCompile Include="ComponentWithPicture.cpp" />
     <ClCompile Include="d3dHdc.cpp" />
     <ClCompile Include="DataBase.cpp" />
@@ -225,6 +228,8 @@
     <Image Include="worshipGirl.ico" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram4.cd" />
     <None Include="ClassDiagram41.cd" />
   </ItemGroup>

@@ -94,7 +94,7 @@ count：设定计时器的触发次数，循环触发则设为-1
 返回 ：自动分配的计时器编号，用户凭编号判断进行什么操作，失败则返回-1
 */
 /************************************************************************/
-int MyTimer::AddMilliTimer(int dt_millisec, int count, TimerResponsable *user)
+int MyTimer::AddMilliTimer(int dt_millisec, int count, ITimerResponsable *user)
 {
 	for (int i = 0; i < MAX_TIMER_M; i++)
 	{

@@ -39,9 +39,6 @@
     <ClInclude Include="Component.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="TimerResponsable.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="MyTimer.h">
       <Filter>头文件</Filter>
     </ClInclude>
@@ -112,6 +109,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BattleMap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentVessel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ITimerResponsable.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IDispatchable.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -200,6 +206,9 @@
     <ClCompile Include="BattleMap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ComponentVessel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="worshipGirl.rc">
@@ -217,5 +226,7 @@
   <ItemGroup>
     <None Include="ClassDiagram4.cd" />
     <None Include="ClassDiagram41.cd" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram1.cd" />
   </ItemGroup>
 </Project>

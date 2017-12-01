@@ -11,7 +11,6 @@ ComponentWithPicture::ComponentWithPicture(wstring imgName, Warship * warship, i
 void ComponentWithPicture::AddToScene(Scene * scene, int id)
 {
 	this->scene = scene;
-	int w = img->GetWidth(), h = img->GetHeight();
 	for (int i = x; i < x + cx; i++) {
 		for (int j = y; j < y + cy; j++) {
 			if (i >= 0 && i < W && j >= 0 && j < H) {

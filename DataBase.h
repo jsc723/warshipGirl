@@ -15,11 +15,11 @@ using namespace std;
 
 #include "Equip.h"
 #include "Warship.h"
-#include "TimerResponsable.h"
+#include "ITimerResponsable.h"
 #include "Troop.h"
 #include "d3dHdc.h"
 
-class DataBase : TimerResponsable
+class DataBase : ITimerResponsable
 {
 public:
 	typedef bool(*RQ_CONDFUNC)(Warship *w, LPARAM lParam, WPARAM wParam);

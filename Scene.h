@@ -2,7 +2,7 @@
 #include <vector>
 #include "Component.h"
 #include "ComponentMsgBox.h"
-#include "TimerResponsable.h"
+#include "ITimerResponsable.h"
 #include "d3dHdc.h"
 #include <gdiplus.h>
 using namespace std;
@@ -32,7 +32,7 @@ void d3dDrawText(LPD3DXFONT font, LPCWSTR text, int x, int y, int cx, int cy,
 	DWORD format, int a, int r, int g, int b);
 MSG RunUntilTrue(bool *condition);
 MSG RunUntilFalse(bool *condition);
-class Scene : public TimerResponsable
+class Scene : public ITimerResponsable
 {
 public:
 	typedef enum State

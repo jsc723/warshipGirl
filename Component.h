@@ -41,7 +41,7 @@ public:
 	ChangingSceneBehaivor changeBhv;
 	
 	void(*OnClick)(Component *self, int x, int y, WPARAM wParam);
-private :
+protected:
 	void InitHelp(int x,int y,int cx,int cy,LPARAM lp);
 };
 

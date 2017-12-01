@@ -1,5 +1,5 @@
 #pragma once
-#include "TimerResponsable.h"
+#include "ITimerResponsable.h"
 #include <ctime>
 #define WM_MY_TIMER WM_APP + 0x0001
 #define ID_MY_TIMER_SHIP_BUILD1 0
@@ -20,7 +20,7 @@ public:
 	~MyTimer();
 	void CheckTimers();
 	void AddTimer(int id,time_t dt,int count);
-	int AddMilliTimer(int dt_millisec, int count, TimerResponsable *user);
+	int AddMilliTimer(int dt_millisec, int count, ITimerResponsable *user);
 	void KillTimer(int id);
 	void KillTimerM(int id);
 	time_t askTimer(int id);
@@ -34,6 +34,6 @@ private:
 	int timeM[MAX_TIMER_M];
 	int dtM[MAX_TIMER_M];
 	int countM[MAX_TIMER_M];
-	TimerResponsable *timeMUser[MAX_TIMER_M];
+	ITimerResponsable *timeMUser[MAX_TIMER_M];
 };
 
