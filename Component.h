@@ -1,6 +1,7 @@
 #pragma once
 #include "Scene.h"
 #include "Label.h"
+#include "IDispatchable.h"
 class Scene;
 class d3dTexture;
 class Component
@@ -20,7 +21,8 @@ public:
 	void InstallOnClick(void(*onclick)(Component *self,int x,int y, WPARAM wParam)) { OnClick = onclick; }
 	void SetChangingSceneBehaivor(int dx, int dy);
 	void SetChangingSceneBehaivor(int dx, int dy, int dw, int dh);
-	virtual void AddToScene(Scene * scene, int id);
+	void AddToScene(Scene * scene, int id);
+	virtual void AddToDispatchable(IDispatchable *dis, int id);
 	virtual void AddLabel(Label *label);
 	virtual void StartPaint();
 	virtual void EndPaint();

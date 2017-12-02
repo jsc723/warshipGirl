@@ -32,7 +32,7 @@ void d3dDrawText(LPD3DXFONT font, LPCWSTR text, int x, int y, int cx, int cy,
 	DWORD format, int a, int r, int g, int b);
 MSG RunUntilTrue(bool *condition);
 MSG RunUntilFalse(bool *condition);
-class Scene : public ITimerResponsable
+class Scene : public ITimerResponsable, public IDispatchable
 {
 public:
 	typedef enum State
@@ -60,18 +60,21 @@ public:
 	virtual void ShowText(std::wstring text, int time_ms);
 	virtual void DrawNormalComponents();
 	void InitOnClick();
-	void AddComponent(Component *com);
+	virtual void AddComponent(Component *com) override;
 	void AddResourceBar(int dx = 0);
 	void AddReturnBtn();
-	void SetComponent(Component *com, int i);
+	virtual void SetComponent(Component *com, int i) override;
+	virtual int GetDispatch(int x, int y) override { return onClickDecide[x][y]; }
+	virtual void SetDispatch(int x, int y, int index) override { onClickDecide[x][y] = index; }
 	void DelComponent(int i);
 	void DelComponent(Component *com);
 	void AddShade();
 	void DelShade();
 	bool SceneMessageBox(LPWSTR title, LPWSTR msg, int option, POINT pt = { (W - 530) / 2,(H - 314) / 2 });
 
-	int onClickDecide[W][H];
+	
 protected:
+	int onClickDecide[W][H];
 	int timerIdShowText;
 	int IN_FM;
 	Bitmap *bg;

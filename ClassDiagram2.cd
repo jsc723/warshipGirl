@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BattleItem" Collapsed="true">
+    <Position X="8.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAEAAAAAgAAAAAAAAEAA=</HashCode>
+      <FileName>BattleItem.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleMap" Collapsed="true">
+    <Position X="17" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAJGAAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>BattleMap.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleWarship" Collapsed="true">
+    <Position X="5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQACAAAAAAAAAAAAAAAAAAAAAAAABCAAAAAAAABAAA=</HashCode>
+      <FileName>BattleWarship.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Component" Collapsed="true">
+    <Position X="5.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACkAAIACAAAEBAAAEAAAIICgAACMAAAAABgAABwwGA=</HashCode>
+      <FileName>Component.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentDynamic" Collapsed="true">
+    <Position X="9.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACBAAAAADCABAAAAAAABAAAAAAIAAAEABAAAQAAAAA=</HashCode>
+      <FileName>ComponentDynamic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentMsgBox" Collapsed="true">
+    <Position X="11" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADCCAAAAAAgABAAAAgUAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>ComponentMsgBox.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentShipListUnit" Collapsed="true">
+    <Position X="4.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAgAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentShipListUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentWithPicture" Collapsed="true">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAABAAAAAAAAAAICgAAAAAAABQACA=</HashCode>
+      <FileName>ComponentWithPicture.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d3dHdc" Collapsed="true">
+    <Position X="18.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAACAAAAAAAAIAABACgAA=</HashCode>
+      <FileName>d3dHdc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="d3dTexture" Collapsed="true">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQQAAAAAAAAABAACAIAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>d3dHdc.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DataBase" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gCAQAAgCCABB2wDENIAIthBMAQEAAgAGQTIIoxAGAlA=</HashCode>
+      <FileName>DataBase.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Equip" Collapsed="true">
+    <Position X="17" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABABJAABQABAEAgAAAAAIAAAAAClAgAgABAAABCAAkE=</HashCode>
+      <FileName>Equip.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Label" Collapsed="true">
+    <Position X="1.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAqAAAAAEAAAAAAAAEAADAAAAAgAAAAoAQABAAAAgAA=</HashCode>
+      <FileName>Label.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelInt" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAIAAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>LabelInt.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LabelStr" Collapsed="true">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACABIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>LabelStr.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MyTimer" Collapsed="true">
+    <Position X="20.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAABAAABAAgBBAgABAAAAAAAgAAABAAAAAQAAAAAgAI=</HashCode>
+      <FileName>MyTimer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scene" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAMAAAUAIQBKkkICAAABFQBICKEAMAAiAAUIQABA=</HashCode>
+      <FileName>Scene.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneBuildShip" Collapsed="true">
+    <Position X="9" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEAAAIBAAAIAAAgABAAAgAAAAAAAAAACAABA=</HashCode>
+      <FileName>SceneBuildShip.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneDock" Collapsed="true">
+    <Position X="6.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAEAAAABA=</HashCode>
+      <FileName>SceneDock.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneRepair" Collapsed="true">
+    <Position X="11.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAYgAAEAAAABAAAIAAAgAAAAAgAABAAIAIAADAABA=</HashCode>
+      <FileName>SceneRepair.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneRepairSelect" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAgAAAAAAAAAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SceneRepairSelect.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneShipList" Collapsed="true">
+    <Position X="4.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>SceneShipList.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneTimerDependent" Collapsed="true">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAEAAAAAAAAAAAAAAAAAAgAAAAAAAgAACAAAI=</HashCode>
+      <FileName>SceneTimerDependent.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneTroop" Collapsed="true">
+    <Position X="13.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAUQAA=</HashCode>
+      <FileName>SceneTroop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SceneWithPage" Collapsed="true">
+    <Position X="3.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAEAAAAEAAAAAAAAAQAQAAAAAAAAAAAABA=</HashCode>
+      <FileName>SceneWithPage.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ITimerResponsable" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITimerResponsable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Troop" Collapsed="true">
+    <Position X="17" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAAQAAABAAAAAAAACAAEAAAAQIA=</HashCode>
+      <FileName>Troop.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentTroopUnit" Collapsed="true">
+    <Position X="2" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ComponentTroopUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EquipBlock" Collapsed="true">
+    <Position X="18.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAIAAAAAAAAABAAIABAAAAAAAQAAAAIAAAAAA=</HashCode>
+      <FileName>Warship.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Warship" Collapsed="true">
+    <Position X="18.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABEQAAAAEDEIAAAAACGAAAACAEGACgAQDBAAQABAgA=</HashCode>
+      <FileName>Warship.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ComponentVessel" Collapsed="true">
+    <Position X="8" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAACAAACAAAAEAAAAAAAAAAgIgEAAACA=</HashCode>
+      <FileName>ComponentVessel.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IDispatchable" Collapsed="true">
+    <Position X="10.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAACAAAAAAAAAAAAAAAAAAAgAAEAAAAA=</HashCode>
+      <FileName>IDispatchable.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="_D3DTLVERTEX" Collapsed="true">
+    <Position X="1.5" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAIAAAAAAAABAABgAQBAAQA=</HashCode>
+      <FileName>d3dHdc.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="WarshipData" Collapsed="true">
+    <Position X="17" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EFkAJAAAQABAAAAAACgAiAAAAgGFAAAQABABAAGQAkk=</HashCode>
+      <FileName>Warship.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="D3DTLVERTEX" Collapsed="true">
+    <Position X="1.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>d3dHdc.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="EquipType" Collapsed="true">
+    <Position X="12.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equip.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="WarshipType" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Warship.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Enum Name="_EquipType" Collapsed="true">
+    <Position X="12.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hABAAgBAAAgAIAAAAAQAAAJgABAAAAgCAAAKQAAAgAA=</HashCode>
+      <FileName>Equip.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_WarshipType" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAAABIACEAgAAACAAgQACAgAgAQMMAAAAAAIAAAA=</HashCode>
+      <FileName>Warship.h</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>

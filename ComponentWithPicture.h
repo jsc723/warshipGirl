@@ -5,7 +5,7 @@ class ComponentWithPicture :
 {
 public:
 	explicit ComponentWithPicture(wstring imgName, Warship *warship, int x, int y, float r,LPARAM lp);
-	virtual void AddToScene(Scene * scene, int id) override;
+	virtual void AddToDispatchable(IDispatchable *d, int id) override;
 	virtual ~ComponentWithPicture();
 	virtual void StartPaint() override;
 	virtual void EndPaint() override;

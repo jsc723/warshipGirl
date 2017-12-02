@@ -8,13 +8,12 @@ ComponentWithPicture::ComponentWithPicture(wstring imgName, Warship * warship, i
 	this->warship = warship;
 }
 
-void ComponentWithPicture::AddToScene(Scene * scene, int id)
+void ComponentWithPicture::AddToDispatchable(IDispatchable *d, int id)
 {
-	this->scene = scene;
 	for (int i = x; i < x + cx; i++) {
 		for (int j = y; j < y + cy; j++) {
 			if (i >= 0 && i < W && j >= 0 && j < H) {
-				scene->onClickDecide[i][j] = id;
+				d->SetDispatch(i, j, id);
 			}
 		}
 	}

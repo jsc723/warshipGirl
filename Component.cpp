@@ -75,6 +75,11 @@ void Component::SetChangingSceneBehaivor(int dx, int dy, int dw, int dh)
 void Component::AddToScene(Scene * scene, int id)
 {
 	this->scene = scene;
+	AddToDispatchable(scene, id);
+}
+
+void Component::AddToDispatchable(IDispatchable * dis, int id)
+{
 	if (img == NULL)
 		return;
 	int w = img->GetWidth(), h = img->GetHeight();
@@ -84,7 +89,7 @@ void Component::AddToScene(Scene * scene, int id)
 				Color clr;
 				img->GetPixel((i - x) * w / cx, (j - y) * h / cy, &clr);
 				if (clr.GetA() > 0) //如果不透明，则视作按钮部分，可以接受消息
-					scene->onClickDecide[i][j] = id;
+					dis->SetDispatch(i, j, id);
 			}
 		}
 	}
